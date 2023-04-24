@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "291152260993",
+    "project_id": "candyd-app",
+    "storage_bucket": "candyd-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291152260993:android:132cb4be81147429f7c280",
+        "android_client_info": {
+          "package_name": "com.frontend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "291152260993-1j4fg2pm85ojl1hh6o2t07sf9e8hcpjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkssbuaKkh9i1yeM52MCzaYw8yDhEI00Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "291152260993-1j4fg2pm85ojl1hh6o2t07sf9e8hcpjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
