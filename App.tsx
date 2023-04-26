@@ -5,6 +5,9 @@ import HomeScreen from './src/modules/home/HomeViewContainer';
 import AuthView from './src/modules/auth/AuthViewContainer';
 import { RootStackParamList } from './src/types/NavigatorTypes';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
+import { Provider } from 'react-redux';
+import store from './src/redux/store';
+import ProfileView from './src/modules/profile/ProfileViewContainer';
 // import { GoogleSignin } from "@react-native-goo"
 
 const Stack = createNativeStackNavigator<RootStackParamList>()
@@ -16,12 +19,15 @@ GoogleSignin.configure({
 
 function App(): JSX.Element {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName='Auth'>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Auth" component={AuthView} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <Provider store={store}>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName='Auth'>
+          <Stack.Screen name="Home" component={HomeScreen} />
+          <Stack.Screen name="Auth" component={AuthView} />
+          <Stack.Screen name="Profile" component={ProfileView} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </Provider>
   );
 }
 

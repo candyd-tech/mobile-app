@@ -5,6 +5,6 @@
 
 # TODO
 
-    - Add redux
-    - Finish Auth
+    - Add redux ✔
+    - Finish Auth ✔ 
     - Make Profile
