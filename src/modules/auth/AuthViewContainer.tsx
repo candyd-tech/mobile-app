@@ -1,17 +1,16 @@
 import React from "react"
 import { Alert, Button, StyleSheet, View } from "react-native"
 import { AuthScreenProps, HomeScreenProps } from "../../types/NavigatorTypes"
+import GoogleSigninButton from "../../components/GoogleSigninButton"
 
 const AuthView = ({ navigation }: AuthScreenProps) => {
-    return (
-        <View style={styles.container}>
-            <Button 
-                onPress={() => navigation.replace("Home")}
-                title="Sign in With Google"
-                accessibilityLabel="Sign in with Google"
-            />
-        </View>
-    )
+  return (
+    <View style={styles.container}>
+      <GoogleSigninButton
+        navigation={navigation}
+      />
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
