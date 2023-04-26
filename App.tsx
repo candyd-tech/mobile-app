@@ -10,8 +10,9 @@ import { GoogleSignin } from '@react-native-google-signin/google-signin';
 const Stack = createNativeStackNavigator<RootStackParamList>()
 
 GoogleSignin.configure({
-  webClientId: '291152260993-1j4fg2pm85ojl1hh6o2t07sf9e8hcpjp.apps.googleusercontent.com'
+  webClientId: '1089985563059-jputhdv2o6fud0pv70d649ovh66sv95p.apps.googleusercontent.com'
 })
+//9  
 
 function App(): JSX.Element {
   return (

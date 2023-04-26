@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "291152260993",
-    "project_id": "candyd-app",
-    "storage_bucket": "candyd-app.appspot.com"
+    "project_number": "1089985563059",
+    "firebase_url": "https://candyd-tech-default-rtdb.firebaseio.com",
+    "project_id": "candyd-tech",
+    "storage_bucket": "candyd-tech.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:291152260993:android:132cb4be81147429f7c280",
+        "mobilesdk_app_id": "1:1089985563059:android:f640e568cf60e4260163c6",
         "android_client_info": {
-          "package_name": "com.frontend"
+          "package_name": "com.candyd.android"
         }
       },
       "oauth_client": [
         {
-          "client_id": "291152260993-1j4fg2pm85ojl1hh6o2t07sf9e8hcpjp.apps.googleusercontent.com",
+          "client_id": "1089985563059-98sgnq2dh5gbsv6isubd0lmed8svb2qr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.candyd.android",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "1089985563059-jputhdv2o6fud0pv70d649ovh66sv95p.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCkssbuaKkh9i1yeM52MCzaYw8yDhEI00Q"
+          "current_key": "AIzaSyDYd4j1iUFwJdxHNJdnzO1kJ5W_K0vbuHw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "291152260993-1j4fg2pm85ojl1hh6o2t07sf9e8hcpjp.apps.googleusercontent.com",
+              "client_id": "1089985563059-eaqr5hjktjrr6psq8dj2itkbh718vujp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
