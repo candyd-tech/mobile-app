@@ -20,7 +20,9 @@ const GoogleSigninButton = ({ navigation }: { navigation: AuthScreenProps['navig
         accessibilityLabel="Sign in with Google"
         onPress={() => {
             onGooglePressButton().then(() => {
-                navigation.replace("Home")
+                navigation.replace("Main", {
+                    screen: "Home"
+                })
             }).catch(err => console.error(err))
         }}
     />

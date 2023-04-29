@@ -6,5 +6,10 @@
 # TODO
 
     - Add redux ✔
-    - Finish Auth ✔ 
+    - Finish Auth 
+        - Integrate Auth state with Redux
+    - Add Bottom bar
     - Make Profile
+    - Splash Screen
+    - Home Screen Scaffold
+    - Add Camera and Image Clicking
