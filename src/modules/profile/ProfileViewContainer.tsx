@@ -1,22 +1,18 @@
 import React from "react"
-import { StyleSheet, View } from "react-native"
+import { Text, View } from "react-native"
 import { ProfileScreenProps } from "../../types/NavigatorTypes"
+import styles from "./ProfileStyles"
+import ProfileInfo from "./components/ProfileInfo"
+import ProfileFeed from "./components/ProfileFeed"
 
 const ProfileView = ({ navigation }: ProfileScreenProps) => {
   return (
     <View style={styles.container}>
+      <ProfileInfo />
+      <ProfileFeed />
     </View>
   )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'grey'
-  }
-})
 
 
 export default ProfileView;

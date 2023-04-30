@@ -22,7 +22,16 @@ function Main(): JSX.Element {
   return (
     <TabBar.Navigator initialRouteName='Home'>
       <TabBar.Screen name="Home" component={HomeScreen} />
-      <TabBar.Screen name="Profile" component={ProfileView} />
+      <TabBar.Screen
+        name="Profile"
+        component={ProfileView}
+        options={{
+          headerShown: false,
+          headerStyle: {
+            backgroundColor: "black"
+          }
+        }}
+      />
       <TabBar.Screen name="Dedications" component={DedicationsView} />
     </TabBar.Navigator>
   )
