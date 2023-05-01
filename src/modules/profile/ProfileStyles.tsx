@@ -43,7 +43,6 @@ const styles = StyleSheet.create({
   },
   profileFeed: {
     flex: 0.7,
-    // backgroundColor: "red",
     alignSelf: "stretch",
   },
   cardContainer: {
@@ -57,8 +56,6 @@ const styles = StyleSheet.create({
     height: 120,
     margin: 4,
     backgroundColor: "#577d86"
-// 577d86
-    // width: "50%",
   },
 })
 

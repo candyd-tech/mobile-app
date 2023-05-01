@@ -13,7 +13,6 @@ export type TabBarParamList = {
   Dedications: undefined
 }
 
-// export type AuthScreenProps = NativeStackScreenProps<RootStackParamList, 'Auth'>
 export type AuthScreenProps = CompositeScreenProps<NativeStackScreenProps<
   RootStackParamList, "Auth">,
   BottomTabScreenProps<TabBarParamList>

@@ -1,14 +1,21 @@
 import { Button, Image, Text, View } from "react-native"
 import styles from "../ProfileStyles"
+import { useSelector } from "react-redux"
+import { RootState } from "../../../redux/store"
 
 const ProfileInfo = () => {
+  const user = useSelector((state: RootState) => state.user.value);
+  console.log(user)
+
   return (
     <View style={styles.profileMain}>
       <View style={styles.profileInfo}>
         {/* Profile Image */}
         <View>
           <Image
-            source={require("./aarya.jpg")}
+            source={{
+              uri: user.photoUrl
+            }}
             style={{width: 100, height: 100, borderRadius: 100}}
           />
         </View>
@@ -16,8 +23,8 @@ const ProfileInfo = () => {
         <View style={styles.profileInfoText}>
           {/* User Name Info */}
           <View>
-            <Text style={{fontSize: 24, fontWeight: "700"}}>Arya Jhaveri</Text>
-            <Text style={{fontStyle: "italic"}}>@aarya123</Text>
+            <Text style={{fontSize: 24, fontWeight: "700"}}>{user.fullname}</Text>
+            <Text style={{fontStyle: "italic"}}>{user.username ? user.username : "no username"}</Text>
           </View>
 
           {/* Posts and Dedications */}
